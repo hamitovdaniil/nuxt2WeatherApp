@@ -1,0 +1,16 @@
+@mixin flex($display, $justify-content, $align-items) {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin defaultBlock($border-radius) {
+    border-radius: $border-radius;
+    background: var(--bg);
+    box-shadow: var(--box-shadow);
+}
+
+@mixin size($size) {
+    width: $size;
+    height: $size;
+}
