@@ -70,7 +70,6 @@ export const actions = {
                 },
             })
             .then((response) => {
-                console.log(response);
                 if (response.status === 200) {
                     context.commit("setDays", response.data.data);
                     context.commit("setSearchCity", response.data.city_name);
